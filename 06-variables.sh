@@ -7,5 +7,5 @@ movies=("inception" "pushpa" "pokiri")
 # index are 0,1,2
 # list all is ---> @ 
 
-echo "First movie is : ${movies[0]}"
-echo "First movie is : ${all movies[@]}"     
+echo "First movie is : ${movies[@]}"
+echo "First movie is : ${all movies[2]}"     
