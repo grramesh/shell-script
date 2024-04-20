@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "please enter your username::"
-read -s username #here user name is variables
+read -s username #here user name is variables 
+                 #here -s is given beside read to hide password entering
 
 echo "please enter the password"
 read -s password
