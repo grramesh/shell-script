@@ -1,8 +1,11 @@
 #!/bin/bash
 **Conversation between two persons**
 
+#Declaring varibles
 person1=$1
 person2=$2
+
+#reffering variables
 
 echo "$person1:: hii $person2 how are you ?"
 echo "$person2:: iam good how are you $person1"
