@@ -8,4 +8,4 @@ movies=("inception" "pushpa" "pokiri")
 # list all is ---> @ 
 
 echo "First movie is : ${movies[@]}"
-echo "First movie is : ${all movies[2]}"     
+echo "First movie is : ${movies[1]}"    
