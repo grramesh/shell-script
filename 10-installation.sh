@@ -15,3 +15,5 @@ echo "you are root user."
 fi
 
 dnf install mysql -y 
+
+echo "is still script proceeding"
