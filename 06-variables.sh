@@ -9,3 +9,4 @@ movies=("inception" "pushpa" "pokiri")
 
 echo "First movie is : ${movies[@]}"
 echo "First movie is : ${movies[1]}"    
+echo "last movie is : ${movies[2]}"
