@@ -4,11 +4,16 @@
 # command--> USERID=$(id -u) here USERID is variable name.
 #when we are installing we should be in super user. 
 
+#Shell script will not stop even if we face error, it will proceed further. 
+# its a user responsiblity to check the previous command is success or not(by using exit status command---> echo $? )if success= 0, if not= 1-127
+
+
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
     echo "please run this script in root access"
+    exit 1 # manually exit if error come.# 
 else
 echo "you are root user."
 
