@@ -6,6 +6,7 @@
 
 #Shell script will not stop even if we face error, it will proceed further. 
 # its a user responsiblity to check the previous command is success or not(by using exit status command---> echo $? )if success= 0, if not= 1-127
+# suppose if we need to install 20 programs, we have to validation each program its taking around 6 lines of validations. hence we have functions topic to minimize these duplicate validations.
 
 
 USERID=$(id -u)
@@ -15,10 +16,30 @@ then
     echo "please run this script in root access"
     exit 1 # manually exit if error come.# 
 else
-echo "you are root user."
+echo "you are root user." 
 
 fi
 
-dnf install mysql -y 
+dnf install mysql -y
+
+if [ $? -ne 0 ]
+ then 
+   echo "Installation of mysql is failure"
+   exit 1
+ else
+   echo "Installation of mysql is sucess"
+fi
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+then
+   echo "installation of git is failure"
+   exit 2
+else
+   echo "installation of git is successfull"
+fi
+
+
 
 echo "is still script proceeding"
