@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# to check whether a number is -ge than 20 or not 
+# to check whether a number is -ge than  or not 
 NUMBER=$1
-if ($NUMBER -gt 10)
+if [ $NUMBER -gt 10 ] #Space between brackets should be there
    then
-echo "Given number $NUMBER is -ge 10"
-  else "given number $NUMBER is  -le 10"
+       echo "Given number $NUMBER is > 10"
+  else 
+       echo "given number $NUMBER is  < 10"
   fi
