@@ -5,7 +5,7 @@
 
 USERID=$(id -u)
 
-if [ $USER -ne 0]
+if [ $USER -ne 0 ]
 then
     echo "please run this script in root access"
 else
