@@ -1,5 +1,6 @@
 #!/bin/bash
-**Conversation between two persons**
+
+#Conversation between two persons
 
 #Declaring varibles
 person1=$1
