@@ -15,9 +15,6 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #It will log in tmp directory as .log
 
 
-
-USERID=$(id -u)
-
 #Below Validate is Funtion name 
 VALIDATE(){    
        if [ $1 -ne 0 ]
