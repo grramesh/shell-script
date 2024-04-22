@@ -7,6 +7,8 @@
 # 2nd--->  2> logs only error command. 1> logs only sucess command 3rd &> logs both sucess and failure.
 # cat > file-name    cat >> file-name (to append /not to override)
 
+# to view logs---> cd /tmp ---> ls -la ----> cat <file-name> ---> cd
+
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
