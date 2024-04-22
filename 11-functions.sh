@@ -41,7 +41,7 @@ VALIDATE $? "Installing my sql"
 
 
 
-dnf install git -y
+dnf install git -y   &>>$LOGFILE
 VALIDATE $? "Installing my git"
 
 

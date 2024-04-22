@@ -10,11 +10,6 @@
 
 
 
-
-
-
-
-
 if [ $USERID -ne 0 ]
 then
     echo "please run this script in root access"
