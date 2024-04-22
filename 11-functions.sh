@@ -36,7 +36,7 @@ echo "you are root user."
 fi
 
 dnf install mysql -y  &>>$LOGFILE
-VALIDATE $? "Installing my sql"
+VALIDATE $? "Installing my sql"   # here $? calls $1 in function and "Installing my sql calls" $2   
 
 
 
