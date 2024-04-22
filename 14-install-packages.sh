@@ -9,6 +9,11 @@ USERID=$(id -u)    #to check whether is having root access or not
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #It will log in tmp directory as .log   
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+B="\e[34m"
 
 VALIDATE(){    
        if [ $1 -ne 0 ]
@@ -36,7 +41,7 @@ do
    dnf list installed $i   &>>$LOGFILE # to check $i packages installed or not
    if [ $? -eq 0 ]
    then
-       echo "$i already installed ..skipping"
+       echo -e "$i already installed ..$Y skipping $N"
      else   
        echo"$i nit installed...need to install"
    fi  
