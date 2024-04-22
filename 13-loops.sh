@@ -4,5 +4,5 @@
 
 for i in {i..20}   #it will loop from 1 to 20
 do
-   echo $18
+   echo $12
 done
