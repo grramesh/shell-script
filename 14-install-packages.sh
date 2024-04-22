@@ -38,5 +38,6 @@ do
    then
        echo "$i already installed ..skipping"
      else   
-       echo"$i nit installed...need to install"  
+       echo"$i nit installed...need to install"
+   fi  
 done   
