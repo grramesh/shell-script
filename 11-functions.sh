@@ -47,4 +47,3 @@ VALIDATE $? "Installing my git"
 
 
 
-echo "is still script proceeding"
