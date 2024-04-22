@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# Function is block of code that can do some work.
+# FUNC_NAME (){  }   <--- THAT is syntax of function.
+# any values if repeated inside in a code can be declared as variable. 
+# similarly any block of code is repeated, considered as functions.
 
 USERID=$(id -u)
 
