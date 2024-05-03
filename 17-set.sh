@@ -14,7 +14,7 @@ else
 echo "you are root user."
 fi
 
-dnf install mysqlsdd -y
+dnf install mysql -y
 dnf install git -y 
 
 echo "is still script proceeding"
