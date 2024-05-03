@@ -7,8 +7,9 @@ N="\e[0m"
 B="\e[34m"
 
 if [ -d $SOURCE_DIRECTORY ]
-  then echo -e "$G Source directory exists $N"
-     else 
+  then
+      echo -e "$G Source directory exists $N"
+  else 
        echo -e "$R please make sure $SOURCE_DIRECTORY exists $N"   
        exit 1
 fi    
