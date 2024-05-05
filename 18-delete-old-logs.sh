@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 B="\e[34m"
 
-if [ -d "$SOURCE_DIRECTORY" ]
+if [ -d $SOURCE_DIRECTORY ]
 
   then
       echo -e "$G Source directory exists $N"
@@ -19,9 +19,9 @@ FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
    echo "Files to delete:$FILES"
 
-   while IFS= read -r line
+   while IFS= read -r line #IFS-->Internal field service , it takes input <<< input line seperately
      do 
-       echo "deleting file:$line"
+       echo "deleting file:$line" 
        rm -rf $line
      done <<< $FILES
 
