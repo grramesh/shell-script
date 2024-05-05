@@ -23,3 +23,6 @@ echo -e "MESSAGE= $MESSAGE"
 #create a server in centos-8    username= centos  pass DevOps321
 # open gmail-->manage settings--> enable two step verification-->search on promt with app password--> copy n paste in VIM
 # [smtp.gmail.com]:587 ramgr498@gmail.com:vlbelnyxvuiczeuu
+
+echo "$MESSAGE & Date $(date)" | mail -s "Disc usage alert" ramesh.gr@jsw.in
+# echo #mail body# | mail -s "subject" to email address
